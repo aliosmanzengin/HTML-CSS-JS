@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- 
+        Head has the indormation about the webpage 
+        -title, style, stylesheet, script
+    -->
+    <HEAD>
+        <title>My Website TechPro</title>  
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+        <!-- actual code will go to the body
+        Almost all tags has opening and closing tags
+      <body> opening body tag
+      < / body > closing body tag --> 
+    <body style = "background-color:lightgoldenrodyellow;">
+        
+        <h1 style="color:rgb(26, 77, 41); font-size: 60px; font-family:fantasy">heading 1</h1>
+        <p id = "my-info">
+           
+
+             <b>The Star Spangled Banner</b>  <br>
+            <i>Oh, say! can you see by the dawn's early light <br>
+            What so proudly we hailed at the twilight's last gleaming; <br>
+            Whose broad stripes and bright stars, through the perilous fight, <br>
+            O'er the ramparts we watched were so gallantly streaming? <br> </i>
+            
+          <u>  source: https://www.lyricsondemand.com/n/nationalanthemslyrics/usanationalanthemlyrics.html </u>
+        </p>
+        <h2>heading 2 image</h2>
+        <img id ="Sunflower"
+              src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Stieler%2C_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg/220px-Stieler%2C_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg" alt="Alexander_von_Humboldt"> 
+          
+        <h3 class ="my-custom-style">TEXT LINK</h3>
+        <br>
+        <a 
+        href="https://www.techproeducation.com"
+        target="_blank"> Techpro Education</a>
+
+        <h4 class ="my-custom-style">IMAGE LINK</h4>
+        <a href="https://www.google.com/" target="_blank">  
+             <img id="google_link" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google_logo">   </a>
+
+
+        <p class ="my-custom-style">This is a paragraph that I am using to style using my custom style</p>
+
+
+
+            <section class="list-section">
+                <h5 class ="my-custom-style">LIST</h5>
+                <ul style="list-style-type: circle;">
+                    <li>Apple</li>
+                    <li>Orange </li>
+                    <li>Banana</li>
+                </ul>
+                <ol type="I">
+                    <li>Mercedes</li>
+                    <li>Lexus</li>
+                    <li>Pagani</li>
+                    <li>Lada</li>
+                </ol>
+                <br>        
+
+            </section>
+
+        
+
+
+
+        <h6 id = "my-unique-id">===WEB TABLE===</h6>
+        <table>
+            <thead>
+                <th>Table header cell</th>    
+                <th>Name</th>  
+                <th>City</th>  
+            </thead>
+            
+            <tr>
+                <td>table data 1</td>
+                <td>John</td>
+                <td>London</td>               
+            </tr>
+
+            <tr>
+                <td>table data 2</td>
+                <td>Sam</td>
+                <td>Texas</td>
+            </tr>     
+        </table>
+
+        <h6 class = "my-custom-style">IFRAMES</h6>
+             <iframe id = "frame" src="https://en.wikipedia.org/wiki/Alexander_von_Humboldt" frameborder="0"></iframe>
+            <br>
+
+
+        
+
+        <h6 class = "my-custom-style">----FORMS----</h6>
+
+               <form action="">            
+        <fieldset class="my_field set">          
+            <legend>My Field Set to Enter User Information</legend>
+            
+            <label style= "font-size: 12px;">First Name</label><br>
+            <input type = "Text Box" style="font-size: 80%;" placeholder="enter first name" ><br><br>
+            <label style= "font-size: 12px;">Last Name</label><br>
+            <input type = "Text" style="font-size: 80%;" placeholder="enter last name"><br><br>
+            <label style= "font-size: 12px;">Enter Your Email</label><br>
+            <input type = "email" style="font-size: 80%;" placeholder="example@mail.com"><br><br>
+            <input type="submit" style="font-size: 80%; color: whitesmoke; background-color: darkmagenta;" value="SAVE!" ><br><br>
+
+            <!-- textarea tag is used to create large text area
+            cols and rows is used to determine the number of visible charater -->
+            <label for = "">text area</label><br>
+            <textarea cols="40" rows="10"> </textarea><br>
+            <!-- use button tag to create a button-->
+            <button style = "color: whitesmoke; background-color: darkred;"> SUBMIT! </button>
+        </fieldset>
+        </form>
+
+        <h6 class="my-custom-style">----Checkbox----</h6>
+        <fieldset class="my_field set">          
+            <legend>My Field Set For Pizza Ingredients</legend>
+                <label for = "">Choose from the menu : </label><br>
+                <input type = "checkbox" style="font-size: 80%;">
+                <label for = "">Mushroom</label><br>
+
+                <input type = "checkbox" style="font-size: 80%;">
+                <label for = "">Pepperoni</label><br>
+
+                <input type = "checkbox" style="font-size: 80%;">
+                <label for = "">Tomato</label><br>
+
+                <input type = "checkbox" style="font-size: 80%;">
+                <label for = "">Cheese</label>
+        </fieldset>
+        <br>
+
+        <h6 class="my-custom-style">---Radio Button----</h6> 
+        <fieldset class="my_field set">          
+         <legend>My Field Set For Radio Button</legend>
+        <label for = "">Gender</label><br>
+        <input type="Radio" name="gender">
+        <label style = "font-size: 13pt;">Male</label> 
+        <input type="Radio" name="gender">
+        <label style = "font-size: 13pt;">Female</label> 
+        <input type="Radio" name="gender">
+        <label style = "font-size: 13pt;">Other</label> 
+
+         </fieldset>
+   
+    <div id="form-div"> 
+        <h6 class = "my-custom-style">---Dropdown---</h6>
+        <form action="">
+            <label style="font-size: 25 px">Choose a model : </label> <br>
+
+            <select name="car-options" id="cars">
+                <option value="Choose"selected>--Choose--</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Honda">Honda</option>
+                <option value="Volkswagen" >Volkswagen</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Hyundai">Hyundai</option>
+            </select>
+        </form>
+
+
+
+        <h6 class = "my-custom-style">---DATES---</h6>
+        <form action="">
+            <hr><br>
+            <label style="font-size: 12pt">Choose appointment date : </label> <br>
+            <input type="date"><br><br>
+            <input type="submit"><br><br>
+           <hr><br>
+           <label style="font-size: 12pt">Select appointment time : </label> <br>
+           <input type="time"><br><br>
+           <input type="submit"><br><br>
+           <hr><br>
+           <label style="font-size: 12pt">Select appointment date and time : </label> <br>
+           <input type="datetime-local"><br><br>
+           <input type="submit"><br><br>
+           <hr><br>
+        </form>
+
+        <h6 class = "my-custom-style">---COLOR PICKER---</h6>
+        <form action="">
+            <hr><br>
+            <label style="font-size: 12pt">Choose a color : </label> <br>
+            <input type="color">
+           <hr><br>
+        </form>
+
+        <h6 class = "my-custom-style">---FILE UPLOAD---</h6>
+        <form action="">
+            <input type="file"><br>
+            <input type="submit">
+
+        </form>
+    
+    </div>
+        <h6 class = "my-custom-style">---VIDEO UPLOAD---</h6>
+        
+            <iframe 
+            width="560" height="315" 
+            src="https://www.youtube.com/embed/kQ-I-VQsvko" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <h6 class = "my-custom-style">---ALERTS---</h6>
+        <button onclick="alert('Warning!!! you have clicked an alert button')" type="button" style ="font-size: 80% ">Click me!</button>
+        <button onclick="alert('You lost')" type="button" style ="font-size: 80% ">Do not click me!</button>
+
+        <br>
+        <br>
+    </body>
+</html>
