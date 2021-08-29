@@ -1,0 +1,66 @@
+.bg-blue{
+    background-color: #073B4C;
+}
+
+.top-part-space{
+    padding: 2% 5%;
+}
+
+.nav-radius{
+    border-radius: 0.75rem;
+}
+
+
+.slogan{
+    
+    font-family: Ubuntu;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+
+
+
+@media(min-width: 768px){
+        .image{
+           transform: rotate(25deg);
+          margin-top: 10%;
+        }
+}
+
+@media(max-width: 767px){
+    .image{
+       
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 10%;
+    }
+}
+
+.download-links{
+    display: flex;
+    justify-content: center;
+}
+
+.top-button-space{
+    padding: 45px 0px;
+}
+
+.fas{
+    color: #FFD166;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.r-l-padding{
+    padding: 3% 8%;
+}
+
+.comment{
+    padding: 3% 15%
+}
+
+/* find id comments and find child of img ONLY */
+#comments img{
+    width: 10%;
+}
